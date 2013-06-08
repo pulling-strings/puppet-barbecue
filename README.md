@@ -2,6 +2,7 @@
 
 [Barbecue](https://github.com/narkisr/fpm-barbecue) repository setup
 
+[![Build Status](https://travis-ci.org/narkisr/puppet-barbecue.png)](https://travis-ci.org/narkisr/puppet-barbecue)
 # Usage
 
 ```puppet
