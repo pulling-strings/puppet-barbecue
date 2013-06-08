@@ -8,3 +8,6 @@ RSpec::Core::RakeTask.new(:spec) do |t|
 end
 
 task :default => [:spec]
+
+PuppetLint.configuration.ignore_paths =['modules/**/*']
+PuppetLint.configuration.send("disable_80chars")
