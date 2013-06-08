@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe 'barbecue' do
+  let(:pre_condition) { "include apt"}
   context "clean state" do
     it { should contain_apt__key('celestial') }
     it { should contain_apt__source('barbecue') }
