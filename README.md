@@ -1,6 +1,6 @@
 # Intro
 
-Barbecue repository setup
+[Barbecue](https://github.com/narkisr/fpm-barbecue) repository setup
 
 # Usage
 
