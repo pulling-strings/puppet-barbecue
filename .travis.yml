@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - ruby-1.9.3-p429
+  - 1.9.3
 script:
   - "librarian-puppet install"
   - "rake lint"
