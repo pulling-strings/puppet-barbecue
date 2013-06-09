@@ -1,6 +1,5 @@
 require 'spec_helper'
 
-puts Dir.pwd
 describe 'barbecue' do
   context "clean state" do
     let(:pre_condition) { "include apt"}
