@@ -4,4 +4,4 @@ rvm:
 script:
   - "librarian-puppet install"
   - "rake lint"
-  - "rake spec"
+  - "rake link spec"
