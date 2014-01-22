@@ -1,7 +1,7 @@
 # useful barbecue packages
 class barbecue::packages {
 
-  package{'scm_breeze':
+  package{'scm-breeze':
     ensure  => present
   }
 
