@@ -1,8 +1,8 @@
 language: ruby
 rvm:
   - 1.9.3
+install: bundle install --binstubs
 script:
-  - "bundle install"
-  - "librarian-puppet install"
+  - "./bin/librarian-puppet install"
   - "rake lint"
   - "rake link spec"
