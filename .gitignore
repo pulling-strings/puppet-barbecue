@@ -1,3 +1,5 @@
 modules
 .librarian
 .tmp
+.bundle
+bin
