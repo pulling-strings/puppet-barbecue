@@ -1,9 +1,7 @@
 # useful barbecue packages
 class barbecue::packages {
 
-  package{'scm-breeze':
-    ensure  => present
-  }
+  apt::source['barbecue'] ->
 
   package{'supernal':
     ensure  => present
