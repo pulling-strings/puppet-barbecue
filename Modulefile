@@ -1,4 +1,4 @@
-name    'puppet-barbecue'
+name    'narkisr-barbecue'
 version '0.0.2'
 source ''
 author 'Ronen Narkis'
