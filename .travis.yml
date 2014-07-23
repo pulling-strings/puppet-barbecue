@@ -3,6 +3,6 @@ rvm:
   - 1.9.3
 install: bundle install --binstubs
 script:
-  - "./bin/librarian-puppet install"
-  - "rake lint"
-  - "rake link spec"
+  - "bundle exec librarian-puppet install"
+  - "bundle exec rake lint"
+  - "bundle exec rake link spec"
