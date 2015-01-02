@@ -3,7 +3,7 @@ class barbecue::packages {
 
   Apt::Source['barbecue'] ->
 
-  package{'supernal':
+  package{['leiningen', 'duply', 'nvm', 'supernal', 'tinymasq', 'fasd']:
     ensure  => present
   }
 }
