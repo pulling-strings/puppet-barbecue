@@ -28,7 +28,7 @@ class barbecue {
 
     apt::source { 'barbecue':
       location    => $repo_url,
-      release     => 'wily',
+      release     => 'xenial',
       repos       => 'main',
       key         => $key_id,
       key_source  => $key_url,
