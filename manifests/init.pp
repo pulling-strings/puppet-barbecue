@@ -17,22 +17,26 @@
 class barbecue {
   if(!defined(Apt::Source['barbecue'])){
     $repo_url = 'https://celestial-ops.com/barbecue'
-    $key_id = 'E29035F0'
+    $key_id = '42ED3C30B8C9F76BC85AC1EC8B095396E29035F0'
     $key_server = 'http://keyserver.ubuntu.com:11371/pks'
     $key_url = "${key_server}/lookup?op=get&fingerprint=on&search=0x8B095396E29035F0"
 
     apt::key {'celestial':
-      key        => $key_id,
-      key_source => $key_url
+      id     => $key_id,
+      source => $key_url
     } ->
 
     apt::source { 'barbecue':
-      location    => $repo_url,
-      release     => 'xenial',
-      repos       => 'main',
-      key         => $key_id,
-      key_source  => $key_url,
-      include_src => false,
+      location => $repo_url,
+      release  => 'xenial',
+      repos    => 'main',
+      key      => {
+        id     => $key_id,
+        source => $key_url
+      },
+      include  => {
+        src => false
+      },
     }
   }
 }
