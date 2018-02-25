@@ -1,0 +1,37 @@
+{
+  "name": "puppet-barbecue",
+  "version": "0.2.0",
+  "author": "Ronen Narkis",
+  "summary": "Module for setting up the Barbecue repo and some of the packages it provides",
+  "license": "Apache-2.0",
+  "source": "https://github.com/pulling-strings/puppet-barbecue",
+  "project_page": "https://github.com/pulling-strings/puppet-barbecue",
+  "issues_url": "https://github.com/pulling-strings/puppet-barbecue",
+  "dependencies": [
+    {
+      "name": "puppetlabs/apt",
+      "version_requirement": ">= 4.5.1"
+    }
+  ],
+  "data_provider": null,
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "16.04"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "9.0"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.0.0"
+    }
+  ]
+}
