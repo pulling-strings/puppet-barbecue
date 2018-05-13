@@ -18,21 +18,19 @@ class barbecue {
   if(!defined(Apt::Source['barbecue'])){
     $repo_url = 'https://raw.githubusercontent.com/narkisr/fpm-barbecue/repo/packages/ubuntu/'
     $key_id = '42ED3C30B8C9F76BC85AC1EC8B095396E29035F0'
-    $key_server = 'http://keyserver.ubuntu.com:11371/pks'
-    $key_url = "${key_server}/lookup?op=get&fingerprint=on&search=0x8B095396E29035F0"
+    $key_server = 'keyserver.ubuntu.com'
 
-    apt::key {'celestial':
+    apt::key{'celestial':
       id     => $key_id,
-      source => $key_url
-    } ->
+      server => $key_server,
+    }
 
-    apt::source { 'barbecue':
+    -> apt::source { 'barbecue':
       location => $repo_url,
       release  => 'xenial',
       repos    => 'main',
       key      => {
         id     => $key_id,
-        source => $key_url
       },
       include  => {
         src => false
